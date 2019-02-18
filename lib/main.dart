@@ -42,31 +42,27 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
-    // return Material(
-    //   type: MaterialType.canvas,
-    //   child: SafeArea(
-    //     child: Container(
-    //       child: Text(
-    //         'Test',
-    //         style: TextStyle(fontSize: 50.0),
-    //       ),
-    //     ),
-    //   ),
-    // );
     return Material(
       type: MaterialType.canvas,
-      child: SafeArea(
-        child: Container(
-            child: ListView.builder(
-          itemCount: courseList.length,
-          itemBuilder: (context, index) {
-            return ListTile(
-              title: Text(courseList[index]),
-            );
-          },
-        )),
+      child: Container(
+        child: Text(
+          'Test',
+          style: TextStyle(fontSize: 50.0),
+        ),
       ),
     );
+    // return Material(
+    //   type: MaterialType.canvas,
+    //   child: Container(
+    //       child: ListView.builder(
+    //     itemCount: courseList.length,
+    //     itemBuilder: (context, index) {
+    //       return ListTile(
+    //         title: Text(courseList[index]),
+    //       );
+    //     },
+    //   )),
+    // );
   }
 
   List<String> courseList = [
